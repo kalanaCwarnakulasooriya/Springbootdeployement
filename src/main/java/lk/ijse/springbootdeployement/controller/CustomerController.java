@@ -16,7 +16,7 @@ public class CustomerController {
         return "Customer";
     }
 
-    @PostMapping
+    @PostMapping("/register")
     public ResponseEntity<Customer> saveCustomer(@RequestBody Customer customer){
         return ResponseEntity.ok(customerService.saveCustomer(customer));
     }
